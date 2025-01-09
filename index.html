@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark  ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supriya Singh - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
+    <div class="fixed w-11/12 -z-10 translate-y-[-80%]">
+        <img src="C:\Users\supri\OneDrive\Desktop\portfolio\img\main.png" alt="" class="w-full hidden">
+    </div>
+    <!----------------------------------------navigation bar---------------------------->
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <h1 class="w-28 cursor-pointer mr-14 font-bold font-Ovo leading-25">My Portfolio</h1>
+
+        <ul
+            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border-white/50 dark:bg-transparent">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button onclick="toggleTheme()">
+                <i class="fa-solid fa-sun text-3xl text-orange-500 hidden dark:block"></i>
+                <i class="fa-solid fa-moon text-3xl dark:hidden"></i>
+                <!-- <img src="https://cdn-icons-png.flaticon.com/128/899/899724.png" class="w-9 dark:hidden ">
+                <img src="https://img.icons8.com/?size=48&id=aWBc8fucFZnx&format=png" class="w-9 hidden dark:block"> -->
+            </button>
+            <button class="block md:hidden ml-3" onclick="openmenu()">
+                <i class="fa-solid fa-bars text-2xl dark:text-white"></i>
+                <!-- <img src="https://img.icons8.com/?size=50&id=36389&format=png" alt="" class="w-6 dark:hidden">
+                <img src="https://cdn-icons-png.flaticon.com/128/17552/17552790.png" alt=""
+                    class="w-6 hidden dark:block"> -->
+            </button>
+        </div>
+        <!--------------------------------------Mobile menu--------------------------------------------------------------->
+        <ul id="menuside" class="flex md:hidden flex-col py-20 px-10  gap-4 fixed  -right-64  top-0 bottom-0 w-64 z-50
+ h-screen bg-rose-200 transition duration-500 dark:bg-[#2a004a] dark:text-white">
+            <div class="absolute right-6 top-6" onclick="closemenu()">
+                <i class="fa-solid fa-xmark tex-4xl dark:text-white"></i>
+                <!-- <img src="https://img.icons8.com/?size=30&id=79023&format=png" alt=""
+                    class="w-5 cursor-pointer dark:hidden"> -->
+                <!-- <img src="https://cdn-icons-png.flaticon.com/128/17438/17438557.png" alt=""
+                    class="w-5 cursor-pointer hidden dark:block"> -->
+            </div>
+            <li><a href="#top" onclick="closemenu()">Home</a></li>
+            <li><a href="#About" onclick="closemenu()">About Me</a></li>
+            <li><a href="#skills" onclick="closemenu()">Skills</a></li>
+            <li><a href="#projects" onclick="closemenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact Me</a></li>
+        </ul>
+    </nav>
+    <!--------------------------------header section------------------------------------------>
+    <div class="w-11/12   max-w-3xl mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="/img/main.png" alt="" class="rounded-full w-32">
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3">Hi! I AM SUPRIYA SINGH <span class="mb-1">&#128075;</span></h3>
+        <h1 class="text-2xl sm:text-6xl lg:text-[50px] font-Ovo">FRONTEND WEB DEVELOPER</h1>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="mailto:supriyastarsingh95456@gmail.com"
+                class="px-10 py-3 border rounded-full bg-gradient-to-t from-[#a1bb8800] to-[#e84e8e] flex items-center gap-2 dark:border-transparent">
+                Contact Me<img src="https://img.icons8.com/?size=24&id=86086&format=png" alt="" class="w-4"></a>
+            <a href="/file/resume.pdf"
+                class="px-10 py-3 border bg-gradient-to-t from-[#a1bb8800] to-[#e84e8e]  border-gray-500 rounded-full bg-white flex items-center gap-2 dark:text-black">
+                My Resume<img src="https://img.icons8.com/?size=64&id=8ZGZTnARklCg&format=png" alt="" class="w-4"></a>
+        </div>
+    </div>
+    <!------------------------------About me----------------------------------------->
+    <div id="About" class="w-full px-[12%] py-10 scroll-mt-20 dark:text-white">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
+        <h2 class="text-center text-5xl font-Outfit">About Me</h2>
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <!--1st col-->
+            <div class="max-w-max mx-auto relative">
+                <img src="/img/about.png" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none lg:-mt-[20rem]">
+                <div class="bg-white w-24 aspect-square absolute right-0 bottom-0 rounded-full 
+            translate-x-1/4 translate-y-1/4 shadow-[0_4px_55px_rgba(149,0,162,0.15)]">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4661/4661318.png" alt="" class="w-full p-4">
+                </div>
+            </div>
+            <!--2nd col-->
+            <div class="flex-1 mb-5">
+                <p class="font-Ovo">I'm supriya singh currently pursuing B-tech in Computer Science and Engineering from
+                    LokNayak Jai Prakash Institute of technology
+                    Chapra,bihar. </p>
+                <p class="font-Ovo">I'm an attentive learner who learnt some technical skills and currently in the
+                    process of learning.I have
+                    learnt Html, Css,javascript and rest is added in my resume.
+                </p>
+                <ul class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl dark:text-white">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lighthover hover:-translate-y-1 
+                duration-500 hover:shadow-black1 
+                dark:hover:-translatr-y-1 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <i class="fa-solid fa-code text-gray-600 text-2xl dark:text-white"></i>
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/128/3573/3573187.png" alt="" class="w-7 mt-3 dark:hidden"> -->
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/128/17379/17379046.png" alt="" class="w-7 mt-3 hidden dark:block"> -->
+
+                        <h3 class="my-4 font-outfit text-gray-700 dark:text-white">Languages</h3>
+                        <p class="text-gray-600 text-sm font-Ovo dark:text-white">HTML,CSS
+                        <p class="text-gray-600 text-sm font-Ovo dark:text-white">JAVASCRIPT</p>
+                        </p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg- lighthover hover:-translate-y-1 
+            duration-500 hover:shadow-black1
+             dark:hover:-translatr-y-1 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <img src="https://cdn-icons-png.flaticon.com/128/15759/15759125.png" alt=""
+                            class="w-7 mt-3 dark:hidden">
+                        <img src="https://cdn-icons-png.flaticon.com/128/16811/16811637.png" alt=""
+                            class="w-7 mt-3 hidden dark:block">
+                        <h3 class="my-4 font-outfit text-gray-700 dark:text-white">Education</h3>
+                        <p class="font-outfit text-gray-700 dark:text-white">B-tech(C.S.E)</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg- lighthover 
+        hover:-translate-y-1 duration-500 hover:shadow-black1
+         dark:hover:-translatr-y-1 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <img src="https://img.icons8.com/?size=50&id=53428&format=png" alt=""
+                            class="w-7 mt-3 dark:hidden">
+                        <img src="https://img.icons8.com/?size=48&id=104229&format=png" alt=""
+                            class="w-7 mt-3 hidden dark:block">
+                        <h3 class="my-4 font-outfit text-gray-700 dark:text-white">Projects</h3>
+                        <p class="font-outfit text-gray-700 dark:text-white">Built more than 1 projects</p>
+                    </li>
+                </ul>
+                <h4 class="my-6 text-white-700 font-Ovo">Coding Plateform I use</h4>
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+                 cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="https://img.icons8.com/?size=80&id=wDGo581Ea5Nf&format=png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+                 cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="/img/icons8-geeksforgeeks-48.png" alt="" class="w-5 sm:w-7">
+                    </li>
+
+                </ul>
+                </ul>
+                <h4 class="my-6 text-white-700 font-Ovo">Developer tools I use</h4>
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+             cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="https://img.icons8.com/?size=48&id=9OGIyU8hrxW5&format=png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+             cursor-pointer hover:-translate-y-1 duration-500">
+             <i class="fa-brands fa-github dark:text-white text-4xl"></i>
+                        <!-- <img src="https://img.icons8.com/?size=64&id=3tC9EQumUAuq&format=png" alt=""
+                            class="w-5 sm:w-7 dark:hidden"> -->
+
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt=""
+                            class="w-5 sm:w-7 hidden dark:block"> -->
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!--------------------------skills--------------------------------------->
+    <div id="skills" class="gap-8 font-Outfit leading-8 lg:mt-10">
+        <div class="text-center text-5xl">
+            <h1 class="mb-5">Skills</h1>
+        </div>
+        <div class="flex md:flex-row sm:flex-col justify-center gap-6 mb-8">
+            <div class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+             hover:bg- lighthover hover:-translate-y-1 duration-500 hover:shadow-black1  
+             dark:hover:-translatr-y-1 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                <img src="https://cdn-icons-png.flaticon.com/128/888/888859.png " alt="">
+            </div>
+            <div class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+             hover:bg- lighthover hover:-translate-y-1 duration-500 hover:shadow-black1
+              dark:hover:-translatr-y-1 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png " alt="">
+            </div>
+            <div class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+             hover:bg- lighthover hover:-translate-y-1 duration-500 hover:shadow-black1
+              dark:hover:-translatr-y-1 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                <img src="https://cdn-icons-png.flaticon.com/128/1199/1199124.png " alt="">
+            </div>
+            <div class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+             hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-black1
+              dark:hover:-translatr-y-1 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                <img src="https://cdn-icons-png.flaticon.com/128/919/919854.png" alt="">
+            </div>
+            <div class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+             hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-black1
+              dark:hover:-translatr-y-1 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png " alt="">
+            </div>
+        </div>
+        <div class="flex md:flex-row sm:flex-col justify-center gap-6 mb-8">
+            <div class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+             hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-black1
+              dark:hover:-translatr-y-1 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                <img src=" https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="">
+            </div>
+            <div class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+             hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-black1
+              dark:hover:-translatr-y-1 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                <img src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png" alt="">
+            </div>
+            <div class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
+             hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-black1
+              dark:hover:-translatr-y-1 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+
+        </div>
+
+    </div>
+    <!--------------projects---------------------------------------------------------------->
+    <!------------------------------------------contact me----------------->
+    <div id="contact" class="font-Outfit leading-8">
+        <div class="text-center text-5xl">
+            <h1 class="mb-4">Contact Me</h1>
+        </div>
+        <div class=" flex md:flex-row sm:flex-col justify-center">
+            <div class="flex items-center justify-center w-12 sm:w-14 aspect-square
+             cursor-pointer hover:-translate-y-1 duration-500"><a href="https://github.com/SupriyaStar" target="_blank">
+                    <i class="fa-brands fa-github dark:text-white text-4xl"></i>
+                    <!-- <img src="https://img.icons8.com/?size=64&id=3tC9EQumUAuq&format=png" alt="" class="dark:hidden">
+                <img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt="" class="hidden dark:block" -->
+            </a>
+            </div>
+            <div class=" flex items-center justify-center w-12 sm:w-14 aspect-square
+             cursor-pointer hover:-translate-y-1 duration-500"><a
+                    href="https://www.linkedin.com/in/supriya-singh-a26193251/" target="_blank">
+                    <i class="fa-brands fa-linkedin text-4xl text-blue-800"></i>
+                    <!-- <img src="https://img.icons8.com/?size=48&id=xuvGCOXi8Wyg&format=png" alt=""> -->
+                    </a></div>
+            <div class="flex items-center justify-center w-12 sm:w-14 aspect-square
+             cursor-pointer hover:-translate-y-1 duration-500"><a href="mailto:supriyastarsingh95456@gmail.com">
+                <i class="fa-solid fa-envelope text-4xl text-red-700"></i>
+                <!-- <img src="https://img.icons8.com/?size=48&id=P7UIlhbpWzZm&format=png" alt=""> -->
+            </a></div>
+
+        </div>
+        <h1 class="font-bold text-center text-xl my-2">Made with &hearts; by supu</h1>
+        <p class="font-semiblod text-gray-400 text-center text-sm my-2">Copyright &copy; 2025 | All Rights Reserved</p>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
